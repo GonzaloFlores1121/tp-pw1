@@ -1,3 +1,15 @@
+body{
+  background-image: linear-gradient(
+        0deg,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+    )
+    ,url(imagenes/640px-Universidad_Nacional_de_La_Matanza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
 .form {
     background-color: #fff;
     display: block;
@@ -7,7 +19,7 @@
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     position: relative;
     left: 750px;
-    top: 200px;
+    top: 250px;
   }
   
   .form-title {
