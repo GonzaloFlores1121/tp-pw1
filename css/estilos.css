@@ -31,8 +31,9 @@ body {
 
 /* Estilos del menú lateral */
 .menu-lateral {
+    display: flex;
     width: 280px;
-    height: 770px;
+    height: 100%;
     background-color: #59A15B;
     padding: 20px;
     position: fixed;
@@ -78,8 +79,8 @@ font-family: 'Rubik', sans-serif;
 }
 #cancion-lateral span{
     position: relative;
-   left: 20px;
-    top: 450px;
+   right: 40px;
+    top: 650px;
 }
 
 /* Estilos del contenido principal */
@@ -248,7 +249,7 @@ footer {
     width: 100%;
     height: 300px;
     position: relative;
-   margin-top: auto;
+  
     
     padding-right: 90px;
 }
