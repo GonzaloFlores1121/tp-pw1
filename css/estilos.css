@@ -4,48 +4,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    max-width: 90%;
     background-color: #59A15B;
+   
 }
-@media screen and (max-width:1150px){
-
-    .song-list{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-
-    }
-    .cancion{
-        display: flex;
-        justify-content: space-evenly;
-        position: relative;
-        bottom: 50px;
-        margin-bottom: 70px;
-    }
-    footer{
-        position: static;
-    }
-    .menu-lateral{
-       width: 50px;
-        
-    }
-
-}
-
-
-
 
 /* Estilos del menú lateral */
 .menu-lateral {
     display: flex;
-    width: calc(25% - 1em);
-        height: 100%;
+    width: 30%;
+    height: 100%;
     background-color: #59A15B;
     padding: 20px;
     position: fixed;
     top: 70px;
+    z-index: 0;
 }
 
 .menu-lateral ul {
@@ -79,11 +51,11 @@ font-family: 'Rubik', sans-serif;
 /* Estilos del contenido principal */
 .contenido-principal {
     display: flex;
-   
    flex-direction: column;
-  position: relative;
+    position: relative;
     left: 300px;
      width: 90%;
+     margin-left: -70px;
     padding-top: 100px;
     padding-bottom: 101px;
     background-color: #85FFBD;
@@ -132,6 +104,10 @@ top: 50px;
 
 .cancion{
     position: relative;
+    display: flex;
+    box-sizing: border-box;
+   
+
 }
 .cancion a{
     text-decoration: none;
@@ -212,6 +188,35 @@ header .cerrar{
     height: 60px;
 }
 
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center; /* Centrar el contenido */
+    height: 400px;
+    position: absolute;
+   top: 4000px;
+    width: 100%;
+   padding-right: 105px;
+   
+   
+}
+
+
+footer ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+}
+
+footer li {
+    margin: 5px 0; /* Espaciado entre elementos de la lista */
+    font-size: 18px;
+}
+
 .reproductor {
     display: flex;
     justify-content: center;
@@ -230,41 +235,17 @@ header .cerrar{
     border: none;
     padding: 15px 50px;
     margin: 10px;
-    cursor: pointer;
-    border-radius: 50%; /* Hace que el botón sea circular */
+     
 }
 
 .boton i {
     color: #f0f0f0;
-    font-size: 24px; /* Tamaño del icono */
+    font-size: 24px; 
     
 }
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    text-align: center; /* Centrar el contenido */
-    height: 400px;
-    position: absolute;
-   top: 4000px;
-    width: 100%;
-    
-   
-   
-}
-
-
-footer ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0;
-}
-
-footer li {
-    margin: 5px 0; /* Espaciado entre elementos de la lista */
-    font-size: 18px;
+.volumen{
+    position: relative;
+    left: 600px;
 }
 #cancion-lateral img{
   
@@ -287,3 +268,62 @@ footer li {
   color: rgb(255, 255, 255);
 }
 
+@media screen and (max-width: 54.25em){
+    
+    .menu-lateral{
+        width: 20%;
+        height: 100%;
+        z-index: -1;
+    }
+    .contenido-principal{
+      margin-left: -160px;
+    }
+    .song-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        
+    }
+    .cancion{
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        bottom: 50px;
+        margin-bottom: 70px;
+        
+    }
+    footer{
+        position: static;
+        width: 100%;
+       padding-right: 165px;
+    }
+   .boton{
+   
+    background-color: #333;
+    border: none;
+    padding: 30px 20px;
+    margin: 5px;
+    position: relative;
+    left: 50px;
+   }
+    .boton i{
+       
+        font-size: 14px; 
+    }
+    #cancion-lateral img{
+  
+        max-width: 50px;
+        max-height: 50px;
+    }
+    #cancion-lateral span{
+        top: 60px;
+        left: 10px;
+    }
+    .volumen{
+        position: relative;
+        left: 120px;
+        
+    }
+}
