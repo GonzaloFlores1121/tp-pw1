@@ -4,7 +4,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    max-width: 94%;
+    max-width: 90%;
+    background-color: #59A15B;
 }
 @media screen and (max-width:1150px){
 
@@ -23,17 +24,24 @@ body {
         bottom: 50px;
         margin-bottom: 70px;
     }
+    footer{
+        position: static;
+    }
+    .menu-lateral{
+       width: 50px;
+        
+    }
 
-    
 }
+
 
 
 
 /* Estilos del menú lateral */
 .menu-lateral {
     display: flex;
-    width: 280px;
-    height: 100%;
+    width: calc(25% - 1em);
+        height: 100%;
     background-color: #59A15B;
     padding: 20px;
     position: fixed;
@@ -66,34 +74,22 @@ font-family: 'Rubik', sans-serif;
     color: #d8c6c6;
    
 }
-#cancion-lateral img{
-    position: fixed;
-    max-width: 200px;
-    max-height: 200px;
-   left: 40px;
-    top: 550px;
-  
-}
-#cancion-lateral a{
-    text-decoration: none;
-}
-#cancion-lateral span{
-    position: relative;
-   right: 40px;
-    top: 650px;
-}
+
 
 /* Estilos del contenido principal */
 .contenido-principal {
-    
+    display: flex;
    
+   flex-direction: column;
   position: relative;
     left: 300px;
      width: 90%;
     padding-top: 100px;
-    padding-bottom: 71px;
+    padding-bottom: 101px;
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    padding-right: 60px;
+    
    
 }
 
@@ -108,6 +104,7 @@ font-family: 'Rubik', sans-serif;
    margin-top: 100px;
     margin-bottom: 300px;
     width: 100%;
+    margin-left: 20px;
 
 }
 .seccion h2{
@@ -224,6 +221,7 @@ header .cerrar{
     bottom: 0px;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .boton {
@@ -239,26 +237,25 @@ header .cerrar{
 .boton i {
     color: #f0f0f0;
     font-size: 24px; /* Tamaño del icono */
+    
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     color: white;
-    padding: 20px; /* Espaciado interno */
     text-align: center; /* Centrar el contenido */
+    height: 400px;
+    position: absolute;
+   top: 4000px;
     width: 100%;
-    height: 300px;
-    position: relative;
-  
     
-    padding-right: 90px;
-}
-
-.footer-container {
-    position: relative;
-    top: 100px;
+   
    
 }
+
 
 footer ul {
     list-style: none; /* Elimina los puntos de la lista */
@@ -268,5 +265,25 @@ footer ul {
 footer li {
     margin: 5px 0; /* Espaciado entre elementos de la lista */
     font-size: 18px;
+}
+#cancion-lateral img{
+  
+    max-width: 60px;
+    max-height: 60px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+
+}
+#cancion-lateral a{
+    
+    text-decoration: none;
+}
+#cancion-lateral span{
+    
+  position: absolute;
+  left: 80px;
+  top: 30px;
+  color: rgb(255, 255, 255);
 }
 

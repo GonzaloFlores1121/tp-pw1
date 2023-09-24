@@ -41,16 +41,9 @@
         </ul>
         
       
-            <div id="cancion-lateral">
-                <a href="">
-                    <img src="css/imagenes/unnamed.jpg" alt="Portada de Canción 3">
-                    <br>
-                    <span> Cancion1 </span>
-                </a>
-            </div>
        
     </aside>
-
+    .
     <main class="contenido-principal">
         <section class="seccion">
             <h2>Lo más escuchado UNLAM</h2>
@@ -267,6 +260,15 @@
         </section>
 
         <div class="reproductor">
+            
+            <div id="cancion-lateral">
+                <a href="">
+                    <img src="css/imagenes/unnamed.jpg" alt="Portada de Canción 3">
+                    <br>
+                    <span> Cancion1 </span>
+                </a>
+
+            </div>
             <button id="anterior" class="boton">
                 <i class="fa-solid fa-backward"></i>
             </button>
@@ -276,17 +278,21 @@
             <button id="siguiente" class="boton">
                 <i class="fas fa-forward"></i>
             </button>
+            <div class="volumen">
+                <input type="range" id="volumen-control" min="0" max="100" step="1" value="50">
+                <label for="volumen-control" id="volumen-label">Volumen: 50%</label>
+            </div>
         </div>
     </main>
     <footer>
-        <div class="footer-container">
+        
             <ul>
                 <li>Integrante</li>
                 <li>Integrante</li>
                 <li>Integrante</li>
                 <li>Integrante</li>
             </ul>
-        </div>
+        
     </footer>
 </body>
 </html>
