@@ -4,10 +4,27 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    
-    background-color: rgb(255, 253, 253);
     max-width: 94%;
+}
+@media screen and (max-width:1150px){
+
+    .song-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+    }
+    .cancion{
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 50px;
+        margin-bottom: 70px;
+    }
+
+    
 }
 
 
@@ -40,9 +57,12 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Rubik', sans-serif;
    
 }
+.menu-lateral ul li:hover{
+    background-color: #1e2c1f;
+}
 .menu-lateral ul li a:hover{
     
-    background-color: #1e2c1f;
+    color: #d8c6c6;
    
 }
 #cancion-lateral img{
@@ -50,12 +70,16 @@ font-family: 'Rubik', sans-serif;
     max-width: 200px;
     max-height: 200px;
    left: 40px;
-    top: 600px;
+    top: 550px;
   
 }
-#cancion-lateral p{
+#cancion-lateral a{
+    text-decoration: none;
+}
+#cancion-lateral span{
     position: relative;
-    top: 520px;
+   left: 20px;
+    top: 450px;
 }
 
 /* Estilos del contenido principal */
@@ -98,26 +122,37 @@ top: 50px;
 
 .song-list{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: nowrap; /* Evita que las canciones se envuelvan en múltiples filas */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-   
+   box-sizing: content-box;
     padding-top: 100px;
     padding-left: 60px;
     padding-bottom: 70px;
 }
 
-.cancion {
-    margin-right: 150px;
-  
-}
 
+.cancion{
+    position: relative;
+}
+.cancion a{
+    text-decoration: none;
+}
 .cancion img {
   border-radius: 5px;
     max-width: 250px;
     max-height: 250px;
 }
+.cancion i {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: none; /* Oculta el ícono por defecto */
+}
 
+.cancion:hover i {
+    display: inline-block; /* Muestra el ícono cuando se pasa el cursor sobre .cancion */
+}
 .titulo-cancion {
     font-size: 16px;
     margin-top: 10px;
@@ -136,15 +171,18 @@ header{
     
     
 }
-header h1{
+header a h1{
     margin: 0;
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Rubik', sans-serif;
 font-size: 34px;
 position: relative;
-
 right: 1500px;
+}
+header a{
+    text-decoration: none;
+    color: #f0f0f0;
 }
 
 header img {
@@ -201,14 +239,7 @@ header .cerrar{
     color: #f0f0f0;
     font-size: 24px; /* Tamaño del icono */
 }
-.cancion a{
-    position: relative;
-    bottom: 240px;
-    left: 210px;
-    
 
-    
-}
 footer {
     background-color: black;
     color: white;
