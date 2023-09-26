@@ -6,42 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Principal de Spotify</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/maca.css">
 
 </head>
 <body>
     <header>
         <a href="menuprincipal.html">
-            <H1> Spotilam </H1>
-            <img src="css/imagenes/unlam-removebg-preview (1).png" alt="logo" id="logo">
+            <img id="logo" src="css/imagenes/logo.png" alt="logo" >  
         </a>
-       
-       
-        <a href="mi-perfil">
-            <img src="css/imagenes/61263271-cuenta-de-usuario-perfil-del-icono-del-círculo-plana-para-aplicaciones-y-sitios-web.jpg" alt="fotoperfil">
-        </a>
-        <h3> Gonzalo Flores </h3>
-        <a href="inicio-sesion.html" class="cerrar">Cerrar sesión</a>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="menuprincipal.html">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="misalbums.html" aria-current="page">MIS ALBUMS</a>
+                    </li>
+                    <li>
+                        <a href="favoritos.html">FAVORITOS</a>
+                    </li>
+                    <li>
+                        <a href="buscar.html">BUSCAR</a>
+                    </li>
+                    <li class="usuario">                            
+                        <a href="mi-perfil.html">
+                            <img src="css/imagenes/perfil.png" alt="Usuario" width="60px">     
+                        </a>
+                        <div>
+                            <a href="mi-perfil.html">@NombreUsuario</a>
+                            <a href="inicio-sesion.html" id="cerrar-sesion">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <aside class="menu-lateral">
-        <ul>
-            <li>
-                <a href="menuprincipal.html">Home</a>
-            </li>
-            <li>
-                <a href="buscar.html">Buscar</a>
-            </li>
-            <li>
-                <a href="misalbums.html">Albums </a>
-            </li>
-            <li>
-                <a href="favoritos.html">Favoritos</a>
-            </li>
-        </ul>
+   
         
       
        
-    </aside>
-    .
+
+    
     <main class="contenido-principal">
         <section class="seccion">
             <h2>Lo más escuchado UNLAM</h2>
@@ -257,7 +263,7 @@
           
         </section>
 
-        <div class="reproductor">
+        <div class="barra-play">
             
             <div id="cancion-lateral">
                 <a href="musica-sonando.html">

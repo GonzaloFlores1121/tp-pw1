@@ -8,60 +8,18 @@ body {
    
 }
 
-/* Estilos del menú lateral */
-.menu-lateral {
-    display: flex;
-    width: 30%;
-    height: 100%;
-    background-color: #59A15B;
-    padding: 20px;
-    position: fixed;
-    top: 70px;
-    z-index: 0;
-}
-
-.menu-lateral ul {
-    list-style: none;
-    padding: 5px ;
-}
-
-.menu-lateral ul li {
-    margin-bottom: 20px;
-    margin-right: 10px;
-}
-
-.menu-lateral ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-family: 'Playfair Display', serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Rubik', sans-serif;
-   
-}
-.menu-lateral ul li:hover{
-    background-color: #1e2c1f;
-}
-.menu-lateral ul li a:hover{
-    
-    color: #d8c6c6;
-   
-}
-
-
 /* Estilos del contenido principal */
 .contenido-principal {
     display: flex;
    flex-direction: column;
     position: relative;
-    left: 300px;
-     width: 90%;
-     margin-left: -70px;
+    
+     
+     
     padding-top: 100px;
     padding-bottom: 101px;
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-    padding-right: 60px;
     
    
 }
@@ -76,7 +34,7 @@ font-family: 'Rubik', sans-serif;
 .seccion{
    margin-top: 100px;
     margin-bottom: 300px;
-    width: 100%;
+  
     margin-left: 20px;
 
 }
@@ -96,10 +54,13 @@ top: 50px;
     justify-content: space-evenly;
     flex-wrap: nowrap; /* Evita que las canciones se envuelvan en múltiples filas */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-   box-sizing: content-box;
+   box-sizing: border-box;
     padding-top: 100px;
     padding-left: 60px;
     padding-bottom: 70px;
+    width: 90%;
+    padding-right: 50px;
+    margin-left: 100px;
 }
 
 
@@ -132,62 +93,8 @@ top: 50px;
     font-size: 16px;
     margin-top: 10px;
 }
-header{
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: end; /* Coloca los elementos al extremo derecho e izquierdo */
-    align-items: center; /* Centra verticalmente los elementos */
-    position: fixed; /* Mantiene la sección fija en la parte superior */
-    top: 0; /* Coloca la sección en la parte superior */
-    width: 100%; /* Ancho completo */
-    z-index: 1; /* Asegura que esté encima del contenido */
-    
-    
-}
-header a h1{
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Rubik', sans-serif;
-font-size: 34px;
-position: relative;
-right: 1500px;
-}
-header a{
-    text-decoration: none;
-    color: #f0f0f0;
-}
 
-header img {
-    
-    width: 40px;
-    height: 40px;
-    border-radius: 50%; /* Hace que la imagen sea circular */
-    position: fixed;
-   right: 20px;
-    top: 10px;
-}
-header h3{
-   
-  position: relative;
-  top: 0px;
-  right: 100px;
-}
-header .cerrar{
-   color: #f0f0f0;
-    position: fixed;
-    top: 50px;
-    right: 100px;
-  
-}
-#logo{
-    position: absolute;
-    left: 20px;
-    width: 100px;
-    height: 60px;
-}
+
 
 
 
@@ -201,7 +108,8 @@ footer {
     height: 400px;
     position: absolute;
    top: 4000px;
-    width: 100%;
+   width: 95%;
+   
    padding-right: 105px;
    
    
@@ -218,7 +126,7 @@ footer li {
     font-size: 18px;
 }
 
-.reproductor {
+.barra-play {
     display: flex;
     justify-content: center;
     align-items: center;
