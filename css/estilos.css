@@ -7,15 +7,18 @@ body {
     background-color: #59A15B;
    
 }
+header{
+   max-width: 100%;
+}
 
 /* Estilos del contenido principal */
 .contenido-principal {
     display: flex;
    flex-direction: column;
     position: relative;
-    
+  
      
-     
+     max-width: 100%;
     padding-top: 100px;
     padding-bottom: 101px;
     background-color: #85FFBD;
@@ -58,16 +61,18 @@ top: 50px;
     padding-top: 100px;
     padding-left: 60px;
     padding-bottom: 70px;
-    width: 90%;
+   
     padding-right: 50px;
     margin-left: 100px;
 }
 
 
 .cancion{
-    position: relative;
+    
     display: flex;
+    justify-content: center;
     box-sizing: border-box;
+    position: relative;
    
 
 }
@@ -76,18 +81,20 @@ top: 50px;
 }
 .cancion img {
   border-radius: 5px;
-    max-width: 250px;
-    max-height: 250px;
+  max-width: 60%;
+  height: auto;
 }
 .cancion i {
-    position: absolute;
+    position: relative;
     top: 5px;
-    right: 10px;
+    right: 160px;
     display: none; /* Oculta el ícono por defecto */
 }
 
 .cancion:hover i {
     display: inline-block; /* Muestra el ícono cuando se pasa el cursor sobre .cancion */
+    position: relative;
+    
 }
 .titulo-cancion {
     font-size: 16px;
@@ -99,6 +106,7 @@ top: 50px;
 
 
 footer {
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,11 +114,12 @@ footer {
     color: white;
     text-align: center; /* Centrar el contenido */
     height: 400px;
-    position: absolute;
-   top: 4000px;
-   width: 95%;
+    position: relative;
+   top: 0px;
    
-   padding-right: 105px;
+   
+   padding-right: 500px;
+  
    
    
 }
@@ -119,7 +128,11 @@ footer {
 footer ul {
     list-style: none; /* Elimina los puntos de la lista */
     padding: 0;
+    max-width: 100%;
+        flex-direction: column;
+       
 }
+
 
 footer li {
     margin: 5px 0; /* Espaciado entre elementos de la lista */
@@ -177,37 +190,46 @@ footer li {
   color: rgb(255, 255, 255);
 }
 
+
 @media screen and (max-width: 54.25em){
     
-    .menu-lateral{
-        width: 20%;
-        height: 100%;
-        z-index: -1;
-    }
-    .contenido-principal{
-      margin-left: -160px;
-    }
+   
+        header {
+            flex-direction: column;
+            text-align: center;
+            
+        }
+
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+            padding-right: 50px;
+        }
+
+        nav ul li {
+            margin: 5px 0;
+            padding-right: 50px;
+        }
+    
+ 
     .song-list{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         flex-wrap: wrap;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        margin-left: 15px;
         
     }
     .cancion{
-        display: flex;
-        justify-content: flex-start;
+       
         position: relative;
         bottom: 50px;
         margin-bottom: 70px;
+
         
     }
-    footer{
-        position: static;
-        width: 100%;
-       padding-right: 165px;
-    }
+    
    .boton{
    
     background-color: #333;
@@ -219,12 +241,12 @@ footer li {
    }
     .boton i{
        
-        font-size: 14px; 
+        font-size: 1.1em; 
     }
     #cancion-lateral img{
   
-        max-width: 50px;
-        max-height: 50px;
+        max-width: 100%;
+        height: auto;
     }
     #cancion-lateral span{
         top: 60px;
@@ -232,7 +254,20 @@ footer li {
     }
     .volumen{
         position: relative;
-        left: 120px;
+        left: 50px;
         
     }
-}
+    
+    }
+    footer{
+       
+        max-width: 85%;
+        padding-right: 393px;        
+    }
+    footer ul{
+        margin-left: 300px;
+    }
+    .barra-play{
+        padding-right: 20%;
+        max-width: 85%;
+    }
