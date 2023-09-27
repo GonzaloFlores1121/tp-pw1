@@ -1,71 +1,95 @@
 
-body{
-    background-color: #242424;
-    color: #DDDDDD;
+/*----------------------------------------------------------------- HEADER Y NAVBAR GENERAL -----------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@700&family=Rubik:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@700&family=Rubik:wght@500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(45deg, #85FFBD, #FFFB7D);
+    font-family: Arial, sans-serif;
 }
 
-header{
-    background-color: #121212;
-    color: #DDDDDD;
+header {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
-    margin-left: -8px;
-    margin-top: -10px;
-    justify-content: end; /* Coloca los elementos al extremo derecho e izquierdo */
-    position: fixed; /* Mantiene la sección fija en la parte superior */
-    top: 0; /* Coloca la sección en la parte superior */
-    width: 100%; /* Ancho completo */
-    height: fit-content;
-    z-index: 1; /* Asegura que esté encima del contenido */
+    justify-content: space-between;
+    align-items: center;
 }
 
-.usuario{
-    height: 5em;
-    display: grid;
-    column-gap: 1em;
-    padding-right: 10px;
-    grid-template-areas: "nombre imagen"
-                         "sesion imagen";
+header div{
+    border-bottom: 4px solid #029673;
 }
 
-.usuario h3{
-    grid-area: nombre;
+nav li{
+    display: flex;
+    align-items: center;
+    margin-right: 30px; 
 }
 
-#linkSesion{
-    grid-area: sesion;
-    padding-bottom: 10px;
-    color: #DDDDDD;
+nav a{
+    color: #029673;
+    display: flex;
+    font-weight: bold;
     text-decoration: none;
+    text-align: center;
+    transition: transform 0.1s;
+} nav a:hover{
+    color: rgb(56, 55, 55);
+    transform: scale(1.06);
 }
 
-#linkSesion:hover{
+ul {
+    list-style: none; 
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+nav a img{
+    margin-right: 6px;
+}
+
+.usuario div{
+    display: flex;
+    flex-direction: column;
+    border-left: solid 1.5px rgb(56, 55, 55);
+    padding-left: 8px;
+    border-bottom: none;
+}
+
+.usuario a{
+    color: rgb(56, 55, 55);
+    padding: 3px;
+    margin-right: 0;
+
+} .usuario a:hover{
+    color: #029673;
     text-decoration: underline;
 }
 
-#linkPerfil{
-    grid-area: imagen;
-    align-self: center;
+#cerrar-sesion{
+    font-size:smaller;
 }
 
-#linkPerfil img{
-    height: 4rem;
-    border-radius: 15%;
-    transition: transform .2s;
+#logo {
+    max-width: 130px;
+    transition: transform 0.2s;
+    cursor: pointer;
+} #logo:hover{
+    transform: scale(1.04);
 }
 
-#linkPerfil img:hover{
-    transform: scale(1.05);
-}
+/*----------------------------------------------------------------- PREMIUM -----------------------------------------------------------------*/
 
 main{
     width: 90%;
     height: fit-content;
     padding-left: 4.5%;
     padding-bottom: 2%;
-    padding-top: 5%;
-    margin-top: -2%;
-    color: #DDDDDD;
-    
 }
 
 .contenedorTarjetas{
@@ -87,13 +111,15 @@ main{
     border-width: 1px;
     border-color: #535353;
     border-radius: 15px;
-    grid-template-rows: 10% 50% 35% 5%;
+    grid-template-rows: 10% 45% 40% 5%;
     transition: transform .1s;
     padding-bottom: 10px;
 }
 
-.tarjeta h2{
+.tarjeta h3{
     padding-left: 2%;
+    align-self: center;
+    justify-self: center;
 }
 
 .tarjeta img{
@@ -108,16 +134,17 @@ main{
 
 .tarjeta:hover{
     transform: scale(1.02);
-    background-color: #59A15B;
+    background-color: #e4e4e4;
     transition: background-color 350ms linear;
+}
+
+.tarjeta:hover h3{
+    color: #029673;
 }
 
 .contenedorInput{
     width: 30%;
     margin-left: 35%;
-    /*display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5rem;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -169,3 +196,6 @@ main{
 .integrante3{ grid-area: integrante3; }
 
 .integrante4{ grid-area: integrante4; }
+
+/*----------------------------------------------------------------- PAGAR -----------------------------------------------------------------*/
+
