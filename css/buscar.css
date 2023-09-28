@@ -189,3 +189,21 @@ h2{
 .recientes a:hover, .recom a:hover, .explorar-todo a:hover{
 font-weight: 1000;
 }
+
+.recientes i, .recom i, .explorar-todo i{
+    position: relative;
+    bottom: 240px;
+    color:black;
+    display: inline-block;
+    left: 70px;
+}
+.recientes i:hover, .recom i:hover, .explorar-todo i:hover, .mas-buscado i:hover{
+    color: goldenrod;
+    display: inline-block;
+}
+.mas-buscado i{
+    position: relative;
+    right:185px;
+    bottom:107px;
+    color: black;
+}
