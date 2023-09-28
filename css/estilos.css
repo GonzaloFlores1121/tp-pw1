@@ -10,7 +10,9 @@ body {
 header{
     
    max-width: 100%;
-   
+   position: fixed;
+   width: 100%;
+   z-index: 1;
 }
 
 /* Estilos del contenido principal */
@@ -145,7 +147,7 @@ footer li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
+    background-color: #ffffff;
     position: fixed;
     bottom: 0px;
     left: 0;
@@ -155,7 +157,7 @@ footer li {
 
 .boton {
    
-    background-color: #333;
+    background-color: #ffffff;
     border: none;
     padding: 15px 50px;
     margin: 10px;
@@ -163,7 +165,7 @@ footer li {
 }
 
 .boton i {
-    color: #f0f0f0;
+    color: #000000;
     font-size: 24px; 
     
 }
@@ -233,7 +235,7 @@ footer li {
     
    .boton{
    
-    background-color: #333;
+   
     border: none;
     padding: 30px 20px;
     margin: 5px;
