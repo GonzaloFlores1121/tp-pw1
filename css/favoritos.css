@@ -147,18 +147,31 @@ body{
     background-image: linear-gradient(45deg, #85FFBD, #FFFB7D);
 }
 .masEscuchada{
-    margin: 0;
-    background: linear-gradient(to right, #029673, rgb(56, 55, 55));
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #029673, rgb(56, 55, 55));    
 }
-.masEscuchada h1{
+#titulo{
     display: flex;
     justify-content: center;
     margin: 0;
     font-size: 28px;
+    padding-right: 40px;
     padding-top: 25px;
     padding-bottom: 25px;
     color: whitesmoke;
     background: linear-gradient(to right, #029673, rgb(56, 55, 55));
+}
+#reproducida{
+    margin: 0;
+    background: linear-gradient(to right, #029673, rgb(56, 55, 55));
+    color: whitesmoke;
+    font-size: 12px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: end;
+
 }
 .escuchada-img-a a{
     cursor: pointer;
