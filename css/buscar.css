@@ -79,7 +79,7 @@ body{
 /*superior*/
 .superior{
     padding-top: 10px;
-    background: linear-gradient(to top, #029673, rgb(56, 55, 55));
+    background: linear-gradient(to bottom, #029673, rgb(56, 55, 55));
 }
 .superior h2{
     display: flex;
@@ -121,47 +121,66 @@ body{
     align-items: center;
     justify-content: center;
 }
+.mas-buscado img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .mas-buscado a{
     padding-left: 25px;
     color: whitesmoke;
+    text-decoration: none;
     grid-template-columns: max-content;
     font-size: large;
 }
+.mas-buscado a:hover{
+    color: black;
+}
+.mas-buscado img{
+    padding-bottom: 50px;
+}
 /*inferior*/
-.inferior, .recom{
+.inferior, .recom, .explorar-todo{
     display: flex;
     padding-left: 100px;
     padding-right: 20px;
     align-items: center;
     justify-content: start;
 }
-.recientes{
-    display: flex;
-    align-items: center;
-}
 .recientes a{
     padding-right: 20px;
     color: #029673;
     font-size: medium;
 }
-.recomendados{
-    display: flex;
-    align-items: center;
-}
 .recomendados a{
     padding-right: 20px;
     color: #029673;
 }
-.main h2{
+h2{
     color: #029673;
-    font-size: medium;
+    font-size: 30;
+    padding-left: 30px;
 }
-img {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 8%;
+.recientes a, .recientes img{
+    display: block;
+    padding-left: 70px;
 }
-a{
+.recom a, .recom img{
+    display: block;
+    padding-left: 70px;
+}
+.explorar-todo a, .explorar-todo img{
+    display: block;
+    padding-left: 70px;
+}
+.recientes a, .recom a, .explorar-todo a{
+    padding-top: 20px;
+    padding-bottom: 20px;
     cursor: pointer;
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+.recientes a:hover, .recom a:hover, .explorar-todo a:hover{
+font-weight: 1000;
 }
