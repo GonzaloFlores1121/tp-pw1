@@ -8,7 +8,9 @@ body {
    
 }
 header{
+    
    max-width: 100%;
+   
 }
 
 /* Estilos del contenido principal */
@@ -54,7 +56,7 @@ top: 50px;
 
 .song-list{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: nowrap; /* Evita que las canciones se envuelvan en múltiples filas */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
    box-sizing: border-box;
@@ -72,7 +74,7 @@ top: 50px;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    position: relative;
+    
    
 
 }
@@ -87,7 +89,7 @@ top: 50px;
 .cancion i {
     position: relative;
     top: 5px;
-    right: 160px;
+    right: 190px;
     display: none; /* Oculta el ícono por defecto */
 }
 
@@ -213,12 +215,11 @@ footer li {
     
  
     .song-list{
-        display: flex;
+       
         flex-direction: column;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
         margin-left: 15px;
+        
         
     }
     .cancion{
