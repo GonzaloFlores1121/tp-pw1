@@ -224,3 +224,17 @@ h1{
     color: black;
     padding-left: 35px;
 }
+.lista i{
+    position: relative;
+    bottom: 195px;
+    left: 60px;
+    color: goldenrod;
+}
+
+.escuchada-img-a i{
+    position: relative;
+    bottom: 275px;
+    left: 82px;
+    color: goldenrod;
+}
+
