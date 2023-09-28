@@ -199,3 +199,53 @@ main{
 
 /*----------------------------------------------------------------- PAGAR -----------------------------------------------------------------*/
 
+#articuloPlan{
+    padding-top: 1%;
+    width: 50%;
+    margin-left: 25%;
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+#articuloPlan h3{
+    grid-row: 1;
+    grid-column: 1/2;
+}
+
+#articuloPlan img{
+    border-radius: 15px;
+    width: 15rem;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#articuloPlan p{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#infoPago{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.campoPago{
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.campoPago input{
+    width: 18rem;
+    height: 2rem;
+}
