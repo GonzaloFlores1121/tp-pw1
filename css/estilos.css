@@ -53,6 +53,7 @@ font-size: 40px;
 position: relative;
 padding: 20px 50px;
 top: 50px;
+border-bottom: none;
 }
 
 
@@ -191,7 +192,8 @@ footer li {
   position: absolute;
   left: 80px;
   top: 30px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font: 1.1em;
 }
 
 
@@ -217,7 +219,7 @@ footer li {
     
  
     .song-list{
-       
+       width: 90%;
         flex-direction: column;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
         margin-left: 15px;
@@ -229,6 +231,7 @@ footer li {
         position: relative;
         bottom: 50px;
         margin-bottom: 70px;
+        margin-left: 50px;
 
         
     }
