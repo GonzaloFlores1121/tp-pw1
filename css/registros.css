@@ -14,6 +14,10 @@
 
     
 }
+.regis{
+  display: flex;
+  justify-content: center;
+}
 
 form {
     display: flex;
@@ -21,11 +25,11 @@ form {
     gap: 10px;
     max-width: 350px;
     background-color: #fff;
-    padding: 20px;
+    padding: 3rem;
     border-radius: 20px;
-    position: relative;
     left: 750px;
     top: 200px;
+    margin: 10rem;
     
 
   }
