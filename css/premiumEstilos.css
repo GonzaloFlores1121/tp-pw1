@@ -35,13 +35,15 @@ main{
 }
 
 .tarjeta img{
-    border-radius: 1em;
+    width: 20em;
+    height: 14em;
 }
 
 .tarjeta p{
     padding-left: 2%;
     padding-right: 2%;
     text-align: justify;
+    padding-top: 15%;
 }
 
 .tarjeta:hover{
@@ -131,9 +133,6 @@ main{
 }
 
 @media screen and (max-width:26em){ /*Celu*/
-    body{
-        width: 184%;
-    }
     
     header {
         padding-left: 0.57375em;
@@ -160,7 +159,10 @@ main{
     
     .tarjeta{ flex-basis: 17em; }
     
-    .tarjeta img{ justify-self: center; }
+    .tarjeta img{
+        justify-self: center;
+        width: 19em;
+    }
     
     .tarjeta p{
         padding-top: 2%;
@@ -170,7 +172,9 @@ main{
     
     .contenedorInput{
         width: 60%;
-        margin-left: 20%;
+        margin-left: 25%;
+        display: flex;
+        flex-direction: column;
     }
 }
    
