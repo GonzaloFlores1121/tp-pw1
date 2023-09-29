@@ -39,6 +39,9 @@
     color: whitesmoke;
     font-size: 15px;
 }
+#placeholder::placeholder{
+    color: whitesmoke;
+}
 .mas-buscado{
     display: flex;
     flex-wrap: wrap;

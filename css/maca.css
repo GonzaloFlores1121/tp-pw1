@@ -77,7 +77,7 @@ h3{
 } .tabla tr:hover{
     background: linear-gradient(to right, rgba(2, 150, 115, 1), rgba(56, 55, 55, 1));
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .tabla td, th{
