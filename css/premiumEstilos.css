@@ -24,7 +24,7 @@ main{
     border-width: 1px;
     border-color: #535353;
     border-radius: 1em;
-    grid-template-rows: 10% 45% 40% 5%;
+    grid-template-rows: 10% 40% 45% 5%;
     transition: transform .1s;
     padding-bottom: .625em;
 }

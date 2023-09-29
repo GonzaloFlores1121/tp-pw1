@@ -1,16 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@700&family=Rubik:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@700&family=Rubik:wght@500;700&display=swap');
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-   
-    background-color: #59A15B;
-   
-}
 header{
-    
    max-width: 100%;
    position: fixed;
    width: 100%;
@@ -20,76 +9,59 @@ header{
 /* Estilos del contenido principal */
 .contenido-principal {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     position: relative;
-  
-     
-     max-width: 100%;
+    max-width: 100%;
     padding-top: 100px;
     padding-bottom: 101px;
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-    
-   
 }
 
-.seccion p{
-    font-family: 'Playfair Display', serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Rubik', sans-serif;
-}
 /* Estilos de las secciones de canciones */
 .seccion{
-   margin-top: 100px;
+    margin-top: 100px;
     margin-bottom: 300px;
-  
     margin-left: 20px;
-
 }
+
 .seccion h2{
-    font-family: 'Playfair Display', serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Rubik', sans-serif;
-font-size: 40px;
-position: relative;
-padding: 20px 50px;
-top: 50px;
-border-bottom: none;
+    font-size: 40px;
+    position: relative;
+    padding: 20px 50px;
+    top: 50px;
+    border-bottom: none;
 }
-
 
 .song-list{
     display: flex;
     justify-content: center;
     flex-wrap: nowrap; /* Evita que las canciones se envuelvan en múltiples filas */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-   box-sizing: border-box;
+    box-sizing: border-box;
     padding-top: 100px;
     padding-left: 60px;
     padding-bottom: 70px;
-   
     padding-right: 50px;
     margin-left: 100px;
 }
 
-
 .cancion{
-    
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    
-   
-
 }
+
 .cancion a{
     text-decoration: none;
 }
+
 .cancion img {
   border-radius: 5px;
   max-width: 60%;
   height: auto;
 }
+
 .cancion i {
     position: relative;
     top: 5px;
@@ -100,48 +72,16 @@ border-bottom: none;
 .cancion:hover i {
     display: inline-block; /* Muestra el ícono cuando se pasa el cursor sobre .cancion */
     position: relative;
-    
 }
+
 .titulo-cancion {
     font-size: 16px;
     margin-top: 10px;
 }
 
-
-
-
-footer {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    text-align: center; /* Centrar el contenido */
-    height: 400px;
-    position: relative;
-   top: 0px;
-   
-   
-   padding-right: 500px;
-  
-   
-   
-}
-
-
-footer ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0;
-    max-width: 100%;
-        flex-direction: column;
-       
-}
-
-
-footer li {
-    margin: 5px 0; /* Espaciado entre elementos de la lista */
-    font-size: 18px;
+.barra-play{
+    padding-right: 20%;
+    max-width: 85%;
 }
 
 .barra-play {
@@ -154,41 +94,46 @@ footer li {
     left: 0;
     width: 100%;
     z-index: 1;
+    margin-bottom: 6%;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
 }
 
 .boton {
-   
     background-color: #ffffff;
     border: none;
     padding: 15px 50px;
     margin: 10px;
-     
 }
 
 .boton i {
     color: #000000;
     font-size: 24px; 
-    
 }
+
 .volumen{
     position: relative;
     left: 600px;
 }
+
 #cancion-lateral img{
-  
     max-width: 60px;
     max-height: 60px;
     position: absolute;
     left: 10px;
     top: 5px;
-
 }
+
 #cancion-lateral a{
-    
     text-decoration: none;
 }
+
 #cancion-lateral span{
-    
   position: absolute;
   left: 80px;
   top: 30px;
@@ -196,46 +141,39 @@ footer li {
   font: 1.1em;
 }
 
-
 @media screen and (max-width: 54.25em){
-    
- 
+
     .song-list{
        width: 90%;
         flex-direction: column;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
         margin-left: 15px;
-        
-        
     }
+
     .cancion{
-       
         position: relative;
         bottom: 50px;
         margin-bottom: 70px;
         margin-left: 50px;
-
-        
     }
     
    .boton{
-   
-   
-    border: none;
-    padding: 30px 20px;
-    margin: 5px;
-    position: relative;
-    left: 50px;
-   }
+        border: none;
+        padding: 30px 20px;
+        margin: 5px;
+        position: relative;
+        left: 50px;
+    }
+
     .boton i{
-       
         font-size: 1.1em; 
     }
+
     #cancion-lateral img{
-  
         max-width: 100%;
         height: auto;
     }
+
     #cancion-lateral span{
         top: 60px;
         left: 10px;
@@ -244,19 +182,8 @@ footer li {
     .volumen{
         position: relative;
         left: 50px;
-        
     }
     
-    }
-    footer{
-       
-        max-width: 85%;
-        padding-right: 393px;        
-    }
-    footer ul{
-        margin-left: 300px;
-    }
-    .barra-play{
-        padding-right: 20%;
-        max-width: 85%;
-    }
+}
+    
+
