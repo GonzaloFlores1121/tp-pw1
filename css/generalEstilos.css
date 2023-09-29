@@ -1,21 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@700&family=Rubik:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@700&family=Rubik:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat:wght@500&display=swap');
 
 body {
-    width: 100%;
     margin: 0;
     padding: 0;
     background-image: linear-gradient(45deg, #85FFBD, #FFFB7D);
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-header {
+header, footer{
     background-color: white;
-    padding-left: 1.25em;
-    padding-right: 1.25em;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 4px solid #029673;
+}
+
+footer{
+    background: linear-gradient(to bottom, #029673, rgb(56, 55, 55));
+    color: white;
+    border-top: 4px solid white;
+    justify-content: center;
+}
+#integrante{
+    color: white;
+    text-align: center;
+}
+
+.contenedorIntegrantes{
+    display: grid;
+    justify-content: space-evenly;
+    width: 95%;
+    margin-left: 2.5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: solid 2px white;
+    color: white;
+    grid-template-areas: "integrante1 integrante2"
+                         "integrante3 integrante4";
+}
+
+.integrante1{ grid-area: integrante1; }
+
+.integrante2{ grid-area: integrante2; }
+
+.integrante3{ grid-area: integrante3; }
+
+.integrante4{ grid-area: integrante4; }
+
+.contenedorIntegrantes li{
+    padding-right: 20px;
+    text-decoration: solid;
+    font-weight: bolder;
+    list-style: bold;
 }
 
 header div{
@@ -25,7 +63,7 @@ header div{
 nav li{
     display: flex;
     align-items: center;
-    margin-right: 1.875em; 
+    margin-right: 30px; 
 }
 
 nav a{
@@ -48,14 +86,14 @@ ul {
 }
 
 nav a img{
-    margin-right: 0,375em;
+    margin-right: 6px;
 }
 
 .usuario div{
     display: flex;
     flex-direction: column;
     border-left: solid 1.5px rgb(56, 55, 55);
-    padding-left: .5em;
+    padding-left: 8px;
     border-bottom: none;
 }
 
@@ -74,29 +112,29 @@ nav a img{
 }
 
 #logo {
-    max-width: 8.125em;
+    max-width: 130px;
     transition: transform 0.2s;
     cursor: pointer;
 } #logo:hover{
     transform: scale(1.04);
+} 
+@media screen and (max-width: 54.25em){
+    
+   
+    header {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 50px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        padding-right: 50px;
+    }
 }
-
-.contenedorIntegrantes{
-    display: grid;
-    justify-content: space-evenly;
-    width: 95%;
-    margin-left: 2.5%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #535353;
-    grid-template-areas: "integrante1 integrante2"
-                         "integrante3 integrante4";
-}
-
-.integrante1{ grid-area: integrante1; }
-
-.integrante2{ grid-area: integrante2; }
-
-.integrante3{ grid-area: integrante3; }
-
-.integrante4{ grid-area: integrante4; }
