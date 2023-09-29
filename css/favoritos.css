@@ -192,8 +192,9 @@ body{
 }
 .conjunto{
     display: flex;
-    padding-left: 100px;
-    padding-right: 30px;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
     align-items: center;
     justify-content: start;
 }
@@ -218,11 +219,9 @@ body{
     color: black;
 
 }
-
-h1{
-    font-size: 25px;
-    color: black;
-    padding-left: 35px;
+h2,h3{
+    font-size: larger;
+    padding-left: 20px;
 }
 .lista i{
     position: relative;

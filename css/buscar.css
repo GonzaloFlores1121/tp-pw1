@@ -81,7 +81,7 @@ body{
     padding-top: 10px;
     background: linear-gradient(to bottom, #029673, rgb(56, 55, 55));
 }
-.superior h2{
+.superior h1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,6 +119,7 @@ body{
 }
 .mas-buscado{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -143,8 +144,9 @@ body{
 /*inferior*/
 .inferior, .recom, .explorar-todo{
     display: flex;
-    padding-left: 100px;
-    padding-right: 20px;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
     align-items: center;
     justify-content: start;
 }
@@ -157,10 +159,10 @@ body{
     padding-right: 20px;
     color: #029673;
 }
-h2{
+h2, h3, h4{
     color: #029673;
-    font-size: 30;
-    padding-left: 30px;
+    font-size: larger;
+    padding-left: 20px;
 }
 .recientes a, .recientes img{
     display: flex;
