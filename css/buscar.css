@@ -1,0 +1,211 @@
+/*header*/
+header {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div{
+    border-bottom: 4px solid #029673;
+}
+
+nav li{
+    display: flex;
+    align-items: center;
+    margin-right: 30px; 
+}
+
+nav a{
+    color: #029673;
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.1s;
+} nav a:hover{
+    color: rgb(56, 55, 55);
+    transform: scale(1.06);
+}
+ul {
+    list-style: none; 
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+nav a img{
+    margin-right: 6px;
+}
+
+.usuario div{
+    display: flex;
+    flex-direction: column;
+    border-left: solid 1.5px rgb(56, 55, 55);
+    padding-left: 8px;
+    border-bottom: none;
+}
+
+.usuario a{
+    color: rgb(56, 55, 55);
+    padding: 3px;
+    margin-right: 0;
+
+} .usuario a:hover{
+    color: #029673;
+    text-decoration: underline;
+}
+
+#cerrar-sesion{
+    font-size:smaller;
+}
+
+#logo {
+    max-width: 130px;
+    transition: transform 0.2s;
+    cursor: pointer;
+} #logo:hover{
+    transform: scale(1.04);
+} 
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(45deg, #85FFBD, #FFFB7D);
+}
+/*superior*/
+.superior{
+    padding-top: 10px;
+    background: linear-gradient(to bottom, #029673, rgb(56, 55, 55));
+}
+.superior h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 30px;
+    
+}
+.container{
+    width: 300px;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5);
+    margin-left: 30px;
+}
+.container:hover{
+    background-color: #1ea888;
+
+}
+.buscador{
+    display: flex;
+    justify-content: start;
+    padding-left: 20px;
+}
+.buscador input{
+    background-color: transparent;
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    font-size: 15px;
+}
+.mas-buscado{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.mas-buscado img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mas-buscado a{
+    padding-left: 25px;
+    color: whitesmoke;
+    text-decoration: none;
+    grid-template-columns: max-content;
+    font-size: large;
+}
+.mas-buscado a:hover{
+    color: black;
+}
+.mas-buscado img{
+    padding-bottom: 50px;
+}
+/*inferior*/
+.inferior, .recom, .explorar-todo{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+    justify-content: start;
+}
+.recientes a{
+    padding-right: 20px;
+    color: #029673;
+    font-size: medium;
+}
+.recomendados a{
+    padding-right: 20px;
+    color: #029673;
+}
+h2, h3, h4{
+    color: #029673;
+    font-size: larger;
+    padding-left: 20px;
+}
+.recientes a, .recientes img{
+    display: flex;
+    justify-content: center;
+    padding-left: 70px;
+}
+.recom a, .recom img{
+    display: flex;
+    justify-content: center;
+    padding-left: 70px;
+}
+.explorar-todo a, .explorar-todo img{
+    display: flex;
+    justify-content: center;
+    padding-left: 70px;
+}
+.recientes a, .recom a, .explorar-todo a{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+.recientes a:hover, .recom a:hover, .explorar-todo a:hover{
+font-weight: 1000;
+}
+
+.recientes i, .recom i, .explorar-todo i{
+    position: relative;
+    bottom: 240px;
+    color:black;
+    display: inline-block;
+    left: 70px;
+}
+.recientes i:hover, .recom i:hover, .explorar-todo i:hover, .mas-buscado i:hover{
+    color: goldenrod;
+    display: inline-block;
+}
+.mas-buscado i{
+    position: relative;
+    right:185px;
+    bottom:107px;
+    color: black;
+}
