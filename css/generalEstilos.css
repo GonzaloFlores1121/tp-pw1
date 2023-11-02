@@ -140,3 +140,6 @@ nav a img{
         padding-right: 50px;
     }
 }
+.ocultar{
+    transform: scale(0);
+}

@@ -1,4 +1,5 @@
 
+
 header{
    max-width: 100%;
    position: fixed;
@@ -8,7 +9,8 @@ header{
 
 /* Estilos del contenido principal */
 .contenido-principal {
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     flex-direction: column;
     position: relative;
     max-width: 100%;
@@ -34,11 +36,15 @@ header{
 }
 
 .song-list{
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap; /* Evita que las canciones se envuelvan en múltiples filas */
+    display: grid;
+    
+   grid-row-gap: 5rem;
+   grid-column-gap: 5rem;
+   
+    grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
+    grid-auto-flow: dense;
+   
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    box-sizing: border-box;
     padding-top: 100px;
     padding-left: 60px;
     padding-bottom: 70px;
@@ -48,17 +54,15 @@ header{
 
 .cancion{
     display: flex;
-    justify-content: center;
-    box-sizing: border-box;
 }
-
 .cancion a{
     text-decoration: none;
 }
 
 .cancion img {
   border-radius: 5px;
-  max-width: 60%;
+  max-width: 100%;
+ 
   height: auto;
 }
 
@@ -142,29 +146,6 @@ footer{
 }
 
 @media screen and (max-width: 54.25em){
-
-    .song-list{
-       width: 90%;
-        flex-direction: column;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-        margin-left: 15px;
-    }
-
-    .cancion{
-        position: relative;
-        bottom: 50px;
-        margin-bottom: 70px;
-        margin-left: 50px;
-    }
-    
-   .boton{
-        border: none;
-        padding: 30px 20px;
-        margin: 5px;
-        position: relative;
-        left: 50px;
-    }
-
     .boton i{
         font-size: 1.1em; 
     }

@@ -6,43 +6,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/registros.css">
+
     <title>Registrarse</title>
 </head>
 
 <body>
     <section class="regis">
-        <form class="form">
+        <form id="registration-form" class="form">
             <p class="title">Registrarse </p>
 
             <div class="flex">
                 <label>
-                    <input required="" placeholder="" type="text" class="input">
-                    <span>Nombres</span>
+                    <input id="username" type="text" class="input" required>
+                    <span>UserName</span>
                 </label>
 
-                <label>
-                    <input required="" placeholder="" type="text" class="input">
-                    <span>Apellidos</span>
-                </label>
             </div>
 
             <label>
-                <input required="" placeholder="" type="email" class="input">
+                <input id="email" type="email" class="input" required>
                 <span>Email</span>
             </label>
 
             <label>
-                <input required="" placeholder="" type="password" class="input">
+                <input id="password" type="password" class="input" required>
                 <span>Contraseña</span>
             </label>
             <label>
-                <input required="" placeholder="" type="password" class="input">
+                <input id="confirm-password" type="password" class="input" required>
                 <span>Confirmar contraseña</span>
             </label>
             <button class="submit">Enviar</button>
             <p class="signin">Ya tenes una cuenta ? <a href="inicio-sesion.html">Incia sesión</a> </p>
+            <div id="error-message"></div>
         </form>
+       
     </section>
+    <script src="javascript/registro.js"></script>
 </body>
+
 
 </html>
