@@ -12,32 +12,37 @@ loginForm.addEventListener('submit', function (event) {
     const username = usernameInput.value;
     const password = passwordInput.value;
 
-    if (usuarioRegistrado) {
+    // Limpiar el mensaje de error anterior
+    errorMessage.textContent = '';
+
+    if (username === "") {
+        errorMessage.textContent = "Ingrese su usuario.";
+    } else if (password === "") {
+        errorMessage.textContent = "Ingrese la contraseña.";
+    } else if (usuarioRegistrado) {
         // Comprobar si el nombre de usuario coincide
         if (username === usuarioRegistrado.username) {
             // Transformar la contraseña ingresada para compararla con la almacenada
             const inputPasswordTransformada = transformarContraseña(password);
-    
+
             // Comprobar si la contraseña coincide
             if (inputPasswordTransformada === usuarioRegistrado.password) {
                 // Inicio de sesión exitoso
                 alert("Inicio de sesión exitoso");
-                window.location.href= 'index.html'
-                guardarSesionIniciada(username,password);
+                window.location.href = 'index.html';
+                guardarSesionIniciada(username, password);
             } else {
-                alert("La contraseña es incorrecta");
+                errorMessage.textContent = "La contraseña es incorrecta";
             }
         } else {
-            alert("El nombre de usuario es incorrecto");
+            errorMessage.textContent = "El nombre de usuario es incorrecto";
         }
     } else {
-        alert("El usuario no está registrado");
+        errorMessage.textContent = "El usuario no está registrado";
     }
-    
-   
-      
-    
 });
+      
+   
 function guardarSesionIniciada(username,password){
 const usuario = {
     usernameLogin : username,

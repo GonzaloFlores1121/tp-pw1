@@ -17,24 +17,36 @@
 
             <div class="flex">
                 <label>
-                    <input id="username" type="text" class="input" required>
+                    <input id="username" type="text" class="input" >
                     <span>UserName</span>
+                    <div id="username-error" class="error-message" style="color: red;"></div>
                 </label>
 
             </div>
 
             <label>
-                <input id="email" type="email" class="input" required>
+             
+             
+               
+            <input id="birthdate" type="date" class="input" >
+         
+        </label>
+
+            <label>
+                <input id="email" type="email" class="input">
                 <span>Email</span>
+                <div id="email-error" class="error-message" style="color: red;"></div>
             </label>
 
             <label>
-                <input id="password" type="password" class="input" required>
+                <input id="password" type="password" class="input">
                 <span>Contraseña</span>
+                <div id="password-error" class="error-message" style="color: red;"></div>
             </label>
             <label>
-                <input id="confirm-password" type="password" class="input" required>
+                <input id="confirm-password" type="password" class="input" >
                 <span>Confirmar contraseña</span>
+                <div id="confirm-password-error" class="error-message" style="color: red;"></div>
             </label>
             <button class="submit">Enviar</button>
             <p class="signin">Ya tenes una cuenta ? <a href="inicio-sesion.html">Incia sesión</a> </p>

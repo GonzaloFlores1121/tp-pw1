@@ -1,39 +1,60 @@
 const registrationForm = document.getElementById('registration-form');
-const usernameInput = document.getElementById('username');
-const emailInput = document.getElementById('email');
-const passwordInput = document.getElementById('password');
-const confirmPasswordInput = document.getElementById('confirm-password');
-const  errorMessageElement= document.getElementById('error-message');
+
 
 
 registrationForm.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    
-    let mensajeError="";
-    const username = usernameInput.value;
-    const email = emailInput.value;
-    const password = passwordInput.value;
-    const confirmPassword = confirmPasswordInput.value;
+    clearErrorMessages();
 
-   if(password != confirmPassword){
-   mensajeError="Las contraseñas no coinciden.";
-   errorMessageElement.textContent=mensajeError;
-   }else{
-   almacenarUsuario(username,email,password);
-    alert("Registro exitoso!");
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirm-password').value;
+    const email = document.getElementById('email').value;
+    const birthdate = document.getElementById('birthdate').value;
+
+    // Realizar validaciones
+    let valid = true;
+
+    if (username.length < 4 || username.length > 8) {
+        displayErrorMessage('username-error', 'El nombre de usuario debe tener entre 4 y 8 caracteres.');
+        valid = false;
+    }
+
+    if(password === ""){
+        displayErrorMessage('password-error', 'Ingrese una contraseña');
+        valid = false;
+    }
+
+    if (password !== confirmPassword) {
+        displayErrorMessage('confirm-password-error', 'Las contraseñas no coinciden.');
+        valid = false;
+    }
+
+    if (!isValidEmail(email)) {
+        displayErrorMessage('email-error', 'El email no es válido.');
+        valid = false;
+    }
+
    
-    window.location.href = 'inicio-sesion.html';
-    
-   }
+    if (valid) {
+        // Todos los campos son válidos, proceder con el registro
+        
+        almacenarUsuario(username,email,password,birthdate);
+        alert('Registro exitoso');
+        window.location.href = 'inicio-sesion.html'; // Navegar a la vista de inicio de sesión
   
+       
+    }
 });
-function almacenarUsuario(username,email,password){
+
+function almacenarUsuario(username,email,password,birthdate){
     const contraseñaTransformada = transformarContraseña(password);
     const usuario = {
         username: username,
         email: email,
-        password: contraseñaTransformada
+        password: contraseñaTransformada,
+        birthdate : birthdate
     };
     const usuarioJSON = JSON.stringify(usuario);
     localStorage.setItem('usuarioRegistrado', usuarioJSON);
@@ -50,8 +71,17 @@ function transformarContraseña(password) {
 }
 
 
-
-
-
+function isValidEmail(email) {
+    return /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(email);
+}
+function displayErrorMessage(elementId, message) {
+    document.getElementById(elementId).textContent = message;
+}
+function clearErrorMessages() {
+    const errorMessages = document.querySelectorAll('.error-message');
+    errorMessages.forEach(function (element) {
+        element.textContent = '';
+    });
+}
 
 
