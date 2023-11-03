@@ -5,10 +5,11 @@ const passwordInput = document.getElementById('password');
 const confirmPasswordInput = document.getElementById('confirm-password');
 const  errorMessageElement= document.getElementById('error-message');
 
+
 registrationForm.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    let error=false;
+    
     let mensajeError="";
     const username = usernameInput.value;
     const email = emailInput.value;

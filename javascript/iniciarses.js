@@ -16,7 +16,7 @@ loginForm.addEventListener('submit', function (event) {
         // Comprobar si el nombre de usuario coincide
         if (username === usuarioRegistrado.username) {
             // Transformar la contraseña ingresada para compararla con la almacenada
-            const inputPasswordTransformada = transformarContrasena(password);
+            const inputPasswordTransformada = transformarContraseña(password);
     
             // Comprobar si la contraseña coincide
             if (inputPasswordTransformada === usuarioRegistrado.password) {
@@ -47,13 +47,13 @@ const usuarioLoginJSON= JSON.stringify(usuario);
 localStorage.setItem('usuarioLogueado', usuarioLoginJSON);
 }
 
-function transformarContrasena(contrasena) {
+function transformarContraseña(contrasena) {
     const longitud = contrasena.length;
     const mitad = Math.floor(longitud / 2);
     const primeraMitad = contrasena.slice(0, mitad);
     const segundaMitad = contrasena.slice(mitad);
-    const contrasenaTransformada = segundaMitad + primeraMitad;
-    return contrasenaTransformada;
+    const contraseñaTransformada = segundaMitad + primeraMitad;
+    return contraseñaTransformada;
 }
 
 
