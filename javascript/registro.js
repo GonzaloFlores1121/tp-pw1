@@ -11,7 +11,7 @@ registrationForm.addEventListener('submit', function (event) {
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
     const email = document.getElementById('email').value;
-    const birthdate = document.getElementById('birthdate').value;
+    const birthdate = document.getElementById('fechaNacimiento').value;
 
     // Realizar validaciones
     let valid = true;
@@ -34,6 +34,10 @@ registrationForm.addEventListener('submit', function (event) {
     if (!isValidEmail(email)) {
         displayErrorMessage('email-error', 'El email no es válido.');
         valid = false;
+    }
+    if(!isValidBirth(birthdate)){
+displayErrorMessage('birthdate-error','Formato invalido de fecha.');
+valid=false;
     }
 
    
@@ -84,4 +88,6 @@ function clearErrorMessages() {
     });
 }
 
-
+function isValidBirth(birthdate){
+    return /^\d{2}-\d{2}-\d{4}$/.test(birthdate);
+}
