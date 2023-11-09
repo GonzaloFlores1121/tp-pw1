@@ -15,6 +15,7 @@ header, footer{
     justify-content: space-between;
     align-items: center;
     border-top: 4px solid #029673;
+    z-index: 1;
 }
 
 footer{
@@ -120,6 +121,115 @@ nav a img{
 } #logo:hover{
     transform: scale(1.04);
 } 
+.contenedor-grid {
+    display: grid;
+    grid-template-areas:
+        "carrusel"
+        "calendario";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 100px;
+    padding: 20px;
+    width: 80%;
+    position: relative;
+    left: 150px;
+    z-index: 0;
+}
+
+.item-carrusel {
+    grid-area: carrusel;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.item-calendario {
+    grid-area: calendario;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+button, .modal__cta{
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+
+    border: none;
+    background-color: royalblue;
+    color: white;
+
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.red{
+    background-color: darkred;
+}
+
+.modal{
+    position: fixed;
+    display: grid;
+    place-items: center;
+    inset: 0;
+    background-color: #0000008d;
+
+    transition: opacity .3s;
+
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.show{
+    pointer-events: unset;
+    opacity: 1;
+}
+
+.modal__container{
+    border-radius: 10px;
+    position: relative;
+    display: grid;
+    gap: 1rem;
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.modal__close{
+    background-color: darkred;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 23px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+}
+
+.modal__figure{
+    width: 90%;
+    
+}
+
+.modal__img{
+    width: 100%;
+    display: block;
+}
+
+.modal__title{
+    font-size: 2rem;
+}
+
+.modal__cta{
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
 @media screen and (max-width: 54.25em){
     
    

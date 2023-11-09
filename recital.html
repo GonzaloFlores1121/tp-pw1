@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://kit.fontawesome.com/e956ed787b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECITALES</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/maca.css">
+    <link rel="stylesheet" href="css/generalEstilos.css">
+    
+    <link rel="stylesheet" href="css/nivo-slider.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/micss.css">
+    <link href='css/fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='css/fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <script src='css/fullcalendar/core/main.js'></script>
+    <script src='css/fullcalendar/daygrid/main.js'></script>
+    <script src="javascript/calendario.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    <script src="javascript/jquery.nivo.slider.js"></script> 
+    <script>
+        $(document).ready(function(){
+            $('#sliderHome').nivoSlider();
+        });
+    </script>
+
+</head>
+<body>
+      
+    </div>
+    <section class="modal clase1 show">
+        <div class="modal__container"> 
+
+            <div class="modal__close">
+                x
+            </div>
+
+            <figure class="modal__figure">
+                <img src="img/image-slider-2.jpg" class="modal__img">
+            </figure>
+    
+            <h1 class="modal__title">¡The era's tour!</h1>
+            <p class="modal__paragraph">
+               Proximo recital en el Estadio Monumental <br>
+               Del 9 al 11 de Noviembre
+            </p>
+    
+            <a class="modal__cta" href="https://www.allaccess.com.ar/event/taylor-swift-the-eras-tour">¡Quiero mi entrada!</a>
+
+        </div>
+    </section>
+    <header>
+        <a href="index.html">
+            <img id="logo" src="css/imagenes/logo.png" alt="logo" >  
+        </a>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="misalbums.html" aria-current="page">MIS ALBUMS</a>
+                    </li>
+                    <li>
+                        <a href="favoritos.html">FAVORITOS</a>
+                    </li>
+                    <li>
+                        <a href="buscar.html">BUSCAR</a>
+                    </li>
+                    <li>
+                        <a href="recital.html">RECITALES</a>
+                    </li>
+                    <li class="usuario" id="userProfile">                            
+                        <a href="mi-perfil.html">
+                            <img src="css/imagenes/perfil.png" alt="Usuario" width="60px">     
+                        </a>
+                        <div>
+                            <a href="mi-perfil.html" id="username">@NombreUsuario</a>
+                            <a href="inicio-sesion.html" id="cerrar-sesion">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+   
+        <section class="contenedor-grid">
+            <div class="item-carrusel">
+            <article class="slider-wrapper theme-default">
+                <div id="sliderHome" class="nivoSlider"> 
+                    <img src="img/image-slider-1.jpg" alt="Andres calamaro" title="Andres calamaro" /> 
+                    <img src="img/image-slider-2.jpg" alt="Taylor Swift " title="Taylor Swift" /> 
+                    <img src="img/image-slider-3.jpg" alt="Roger Waters" title="Roger Waters"/> 
+                    <img src="img/image-slider-4.jpg" alt="Tan Biónica" title="Tan Biónica" />
+
+                </div>
+            </div>
+            </article>
+
+            <div class="item-calendario">
+            <section >
+            <article id="calendario"></article>
+        </div>
+        </section>
+
+<footer>
+    <section >
+        <p id="integrante">Integrantes</p>
+        <ol class="contenedorIntegrantes">
+            <li class="integrante1">Ravina Macarena 41.914.530</li>
+            <li class="integrante2">Flores Gonzalo 45.128.862</li>
+            <li class="integrante3">Landín Ivan 40.193.158</li>
+            <li class="integrante4">Buda Matias 41.709.637</li>
+        </ol>
+    </section>
+</footer>
+    <script src="javascript/index.js"></script>
+    <script src="javascript/popup.js"></script>
+</body>
+</html>
