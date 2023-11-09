@@ -5,7 +5,7 @@ const usuarioLogueado = JSON.parse(usuarioLogueadoJSON);
 if (localStorage.getItem('usuarioLogueado')) {
     // El usuario ha iniciado sesión, mostrar elementos relacionados con el perfil
     const usernameLogin = usuarioLogueado.usernameLogin;
-   const username= document.getElementById('username').textContent=usernameLogin;
+  document.getElementById('username').textContent=usernameLogin;
   
 } else {
     // El usuario no ha iniciado sesión, ocultar elementos relacionados con el perfil
