@@ -3,19 +3,16 @@ let canciones=[
         tituloCancion:"Prisioner",
         fotoCancion:"css/imgmati/dua lipa luna.jpg",
         cancion:"Prisioner(ft dua lipa)",
-        referencia:"https://open.spotify.com/track/1V4uMdCH6aDZire0vVqnXW"
     },   
     {
         tituloCancion:"Ciudad Magica",
         fotoCancion:"css/imgmati/bionica album.jpg",
         cancion:"Ciudad Magica",
-        referencia:"https://open.spotify.com/intl-es/track/29Bjl63rfik8188v8J08hQ?si=f7330971706249f7"
     },
     {
         tituloCancion:"Pendejo",
         fotoCancion:"css/imgmati/babasonicos album.jpg",
         cancion:"Pendejo",
-        referencia:"https://open.spotify.com/intl-es/track/60GX3BzwD0n4RlntDDsnxO?si=26d8ce558517417c"
     }
 ];
 
@@ -23,7 +20,7 @@ let resultadoCanciones = document.querySelector("#resultadoCanciones");
 canciones.forEach((item)=>{
     resultadoCanciones.innerHTML+=`<div class="lista" data-title="${item.tituloCancion}" data-type="cancion">
                                         <img src="${item.fotoCancion}" alt="${item.cancion}" width="150">
-                                        <a href="${item.referencia}">${item.tituloCancion}</a>
+                                        <a href="">${item.tituloCancion}</a>
                                         
                                         <a href=""><i class="fas fa-star"></i></a>
                                     </div>`;
@@ -35,7 +32,6 @@ let albums=[
         tituloAlbum:"Future Nostalgia",
         img:"css/imgmati/dua lipa luna.jpg",
         alt:"Future Nostalgia",
-        href:"https://open.spotify.com/album/0JeyP8r2hBxYIoxXv11XiX",
         a:"Future Nostalgia"
 
     },
@@ -43,14 +39,12 @@ let albums=[
         tituloAlbum:"Destinología",
         img:"css/imgmati/bionica album.jpg",
         alt:"Destinología",
-        href:"https://open.spotify.com/track/1V4uMdCH6aDZire0vVqnXW",
         a:"Destinología"
     },
     {
         tituloAlbum:"Jessico",
         img:"css/imgmati/babasonicos album.jpg",
         alt:"Jessico",
-        href:"https://open.spotify.com/track/1V4uMdCH6aDZire0vVqnXW",
         a:"Jessico"
     }
 ];
@@ -60,7 +54,7 @@ albums.forEach((item)=>{
     resultadoAlbums.innerHTML+=`
     <div class="lista" data-title="${item.tituloAlbum}" data-type="album">
     <img src="${item.img}" alt="${item.alt}" width="150">
-        <a href="${item.href}">${item.a}
+        <a href="">${item.a}
         </a>
 
         <a href="">
@@ -93,7 +87,7 @@ buscador.addEventListener("keyup", () => {
         canciones.forEach((item)=>{
             resultadoCanciones.innerHTML+=`<div class="lista" data-title="${item.tituloCancion}" data-type="cancion">
                                                 <img src="${item.fotoCancion}" alt="${item.cancion}" width="150">
-                                                <a href="${item.referencia}">${item.tituloCancion}</a>
+                                                <a href="">${item.tituloCancion}</a>
                                                 
                                                 <a href=""><i class="fas fa-star"></i></a>
                                             </div>`;
@@ -103,7 +97,7 @@ buscador.addEventListener("keyup", () => {
             resultadoAlbums.innerHTML += `
                 <div class="lista" data-title="${item.tituloAlbum}" data-type="album">
                     <img src="${item.img}" alt="${item.alt}" width="150">
-                    <a href="${item.href}">${item.a}</a>
+                    <a href="">${item.a}</a>
                     <a href=""><i class="fas fa-star"></i></a>
                 </div>`;
         });
@@ -113,7 +107,7 @@ buscador.addEventListener("keyup", () => {
             resultadoAlbums.innerHTML+=`
             <div class="lista" data-title="${item.tituloAlbum}" data-type="album">
             <img src="${item.img}" alt="${item.alt}" width="150">
-                <a href="${item.href}">${item.a}
+                <a href="">${item.a}
                 </a>
         
                 <a href="">
@@ -127,7 +121,7 @@ buscador.addEventListener("keyup", () => {
             resultadoCanciones.innerHTML += `
                 <div class="lista" data-title="${item.tituloCancion}" data-type="cancion">
                     <img src="${item.fotoCancion}" alt="${item.cancion}" width="150">
-                    <a href="${item.referencia}">${item.tituloCancion}</a>
+                    <a href="">${item.tituloCancion}</a>
                     <a href=""><i class="fas fa-star"></i></a>
                 </div>`;
         });
@@ -137,7 +131,7 @@ buscador.addEventListener("keyup", () => {
             resultadoCanciones.innerHTML += `
                 <div class="lista" data-title="${item.tituloCancion}" data-type="cancion">
                     <img src="${item.fotoCancion}" alt="${item.cancion}" width="150">
-                    <a href="${item.referencia}">${item.tituloCancion}</a>
+                    <a href="">${item.tituloCancion}</a>
                     <a href=""><i class="fas fa-star"></i></a>
                 </div>`;
         });
@@ -147,7 +141,7 @@ buscador.addEventListener("keyup", () => {
             resultadoAlbums.innerHTML += `
                 <div class="lista" data-title="${item.tituloAlbum}" data-type="album">
                     <img src="${item.img}" alt="${item.alt}" width="150">
-                    <a href="${item.href}">${item.a}</a>
+                    <a href="">${item.a}</a>
                     <a href=""><i class="fas fa-star"></i></a>
                 </div>`;
         });
