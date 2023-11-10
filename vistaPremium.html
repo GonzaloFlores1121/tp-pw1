@@ -32,7 +32,7 @@
                             <img src="img/perfil.png" alt="Usuario" width="60px">     
                         </a>
                         <div>
-                            <a href="mi-perfil.html">@NombreUsuario</a>
+                            <a href="mi-perfil.html" id="nombreUsuario">@NombreUsuario</a>
                             <a href="inicio-sesion.html" id="cerrar-sesion">Cerrar Sesión</a>
                         </div>
                     </li>
@@ -44,35 +44,38 @@
     <main>
         <h3>PLANES PREMIUM</h3>
 
-        <section class="contenedorTarjetas">
-            <article class="tarjeta">
-                <h3>PLAN MENSUAL</h3>
-                <img src="img/plan_mensual.jpg" alt="plan_mensual.jpg">
-                <p>Convertite en usuario Premium por un mes y escuchá tu música sin anuncios y en cualquier lugar!</p>
-                <input type="radio">
-            </article>
-            <article class="tarjeta">
-                <h3>PLAN ANUAL</h3>
-                <img src="img/plan_anual.jpg" alt="plan_anual.jpg">
-                <p>Convertite en usuario Premium por un año a un menor costo mensual!</p>
-                <input type="radio">
-            </article>
-            <article class="tarjeta">
-                <h3>PLAN INFINITO</h3>
-                <img src="img/plan_infinito.jpg" alt="plan_infinito.jpg">
-                <p>Convertite en usuario Premium por tiempo indefinido!</p>
-                <input type="radio">
-            </article>
-        </section>
+        <form action="vistaPagar.html" method="get" id="formularioPlanes">
+            <section class="contenedorTarjetas">
+                <article class="tarjeta">
+                    <h3 id="nombrePlanMensual">PLAN MENSUAL</h3>
+                    <img id="imagenPlanMensual" src="img/plan_mensual.jpg" alt="plan_mensual.jpg">
+                    <p id="descripcionPlanMensual">Convertite en usuario Premium por un mes y escuchá tu música sin anuncios y en cualquier lugar!</p>
+                    <input type="radio" name="plan" id="mensual" onchange="cambiarSeleccion()">
+                </article>
+                <article class="tarjeta">
+                    <h3 id="nombrePlanAnual">PLAN ANUAL</h3>
+                    <img id="imagenPlanAnual" src="img/plan_anual.jpg" alt="plan_anual.jpg">
+                    <p id="descripcionPlanAnual">Convertite en usuario Premium por un año a un menor costo mensual!</p>
+                    <input type="radio" name="plan" id="anual" onchange="cambiarSeleccion()">
+                </article>
+                <article class="tarjeta">
+                    <h3 id="nombrePlanInfinito">PLAN INFINITO</h3>
+                    <img id="imagenPlanInfinito" src="img/plan_infinito.jpg" alt="plan_infinito.jpg">
+                    <p id="descripcionPlanInfinito">Convertite en usuario Premium por tiempo indefinido!</p>
+                    <input type="radio" name="plan" id="infinito" onchange="cambiarSeleccion()">
+                </article>
+            </section>
+    
+            <section class="contenedorInput">
+                <a href="mi-perfil.html">
+                    <button class="botonSecundario">Cancelar</button>
+                </a>
+                <a href="vistaPagar.html">
+                    <button class="botonPrincipal" id="btnSubmit">Avanzar</button>
+                </a>
+            </section>
+        </form>
 
-        <section class="contenedorInput">
-            <a href="mi-perfil.html">
-                <button class="botonSecundario">Cancelar</button>
-            </a>
-            <a href="vistaPagar.html">
-                <button class="botonPrincipal">Avanzar</button>
-            </a>
-        </section>
     </main>
 
     <footer>
@@ -86,5 +89,7 @@
             </ol>
         </section>
     </footer>
+
+    <script src="javascript/vistaPremium.js"></script>
 </body>
 </html>

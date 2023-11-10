@@ -32,7 +32,7 @@
                             <img src="img/perfil.png" alt="Usuario" width="60px">     
                         </a>
                         <div>
-                            <a href="mi-perfil.html">@NombreUsuario</a>
+                            <a href="mi-perfil.html" id="username">@NombreUsuario</a>
                             <a href="inicio-sesion.html" id="cerrar-sesion">Cerrar Sesión</a>
                         </div>
                     </li>
@@ -44,9 +44,9 @@
     <main>
         <section>
             <article id="articuloPlan">
-                <h3>PLAN ANUAL</h3>
-                <img src="img/plan_anual.jpg" alt="plan_anual.jpg">
-                <p>Convertite en usuario Premium por un año a un menor costo mensual!</p>
+                <h3 id="nombrePlan"></h3>
+                <img src="" alt="plan.jpg" id="imagenPlan">
+                <p id="descripcionPlan"></p>
             </article>
 
             <article id="infoPago">
@@ -90,5 +90,7 @@
             </ol>
         </section>
     </footer>
+
+    <script src="javascript/vistaPagar.js"></script>
 </body>
 </html>
