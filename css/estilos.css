@@ -1,11 +1,5 @@
 
 
-header{
-   max-width: 100%;
-   position: fixed;
-   width: 100%;
-   z-index: 1;
-}
 
 /* Estilos del contenido principal */
 .contenido-principal {
@@ -98,16 +92,8 @@ header{
     left: 0;
     width: 100%;
     z-index: 1;
-    margin-bottom: 6%;
+    margin-top: 6%;
 }
-
-footer{
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    z-index: 1;
-}
-
 .boton {
     background-color: #ffffff;
     border: none;
