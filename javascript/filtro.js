@@ -40,18 +40,18 @@ let albums=[
 
     },
     {
-        tituloAlbum:"Ciudad Magica",
+        tituloAlbum:"Destinología",
         img:"css/imgmati/bionica album.jpg",
-        alt:"Ciudad Magica",
+        alt:"Destinología",
         href:"https://open.spotify.com/track/1V4uMdCH6aDZire0vVqnXW",
-        a:"Ciudad Magica"
+        a:"Destinología"
     },
     {
-        tituloAlbum:"Pendejo",
+        tituloAlbum:"Jessico",
         img:"css/imgmati/babasonicos album.jpg",
-        alt:"Pendejo",
+        alt:"Jessico",
         href:"https://open.spotify.com/track/1V4uMdCH6aDZire0vVqnXW",
-        a:"Pendejo"
+        a:"Jessico"
     }
 ];
 let resultadoAlbums = document.querySelector("#resultadoAlbums");
@@ -69,22 +69,87 @@ albums.forEach((item)=>{
 </div>
     `;
 });
+let tipo =1;
+function cambioDeSeleccionador(){
+    tipo = document.querySelector("#tipoBusqueda").value;
+};
+let buscador = document.querySelector("#busqueda");
+buscador.addEventListener("keyup", () => {
+    // alert(tipo);
+    // 1.-guardar el valor del buscador
+    let valor = buscador.value.toLowerCase();
+    // 2.-filtrar canciones por título
+    let cancionesFiltradas = canciones.filter(cancion => cancion.tituloCancion.toLowerCase().indexOf(valor)>-1);
+    
+    // 3.-filtrar albums por título
+    let albumsFiltrados = albums.filter(album => album.tituloAlbum.toLowerCase().indexOf(valor)>-1);
 
-let buscador=document.querySelector("#buscador");
-buscador.addEventListener("keyup",()=>{
-    //1.-guardar el valor del buscador
-    let valor=buscador.value;
-    //2.-filtrar el array de cursos
-    let cursosFiltrados=cursos.filter(curso=>curso.titulo.indexOf(valor)>-1);
-    //3.-limpiar resultados
-    resultado.innerHTML="";
-    //4.-llenar resultados con los cursos filtrados
-    cursosFiltrados.forEach((item)=>{
-        resultado.innerHTML+=`
-            <article>
-                <h2>Título: ${item.titulo}</h2>
-                <p>Duración: ${item.duracion}</p>
-            </article>
-        `;
-    });
+    // 4.-limpiar resultados
+    resultadoCanciones.innerHTML = "";
+    resultadoAlbums.innerHTML = "";
+
+    if(tipo == 3){
+        // canciones originales
+        canciones.forEach((item)=>{
+            resultadoCanciones.innerHTML+=`<div class="lista" data-title="${item.tituloCancion}" data-type="cancion">
+                                                <img src="${item.fotoCancion}" alt="${item.cancion}" width="150">
+                                                <a href="${item.referencia}">${item.tituloCancion}</a>
+                                                
+                                                <a href=""><i class="fas fa-star"></i></a>
+                                            </div>`;
+        });
+        // 6.-llenar resultados con los albums filtrados
+        albumsFiltrados.forEach((item) => {
+            resultadoAlbums.innerHTML += `
+                <div class="lista" data-title="${item.tituloAlbum}" data-type="album">
+                    <img src="${item.img}" alt="${item.alt}" width="150">
+                    <a href="${item.href}">${item.a}</a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                </div>`;
+        });
+    }else if(tipo == 2){
+        // albums originales
+        albums.forEach((item)=>{
+            resultadoAlbums.innerHTML+=`
+            <div class="lista" data-title="${item.tituloAlbum}" data-type="album">
+            <img src="${item.img}" alt="${item.alt}" width="150">
+                <a href="${item.href}">${item.a}
+                </a>
+        
+                <a href="">
+                    <i class="fas fa-star"></i>
+                </a>
+        </div>
+            `;
+        });
+        // 5.-llenar resultados con las canciones filtradas
+        cancionesFiltradas.forEach((item) => {
+            resultadoCanciones.innerHTML += `
+                <div class="lista" data-title="${item.tituloCancion}" data-type="cancion">
+                    <img src="${item.fotoCancion}" alt="${item.cancion}" width="150">
+                    <a href="${item.referencia}">${item.tituloCancion}</a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                </div>`;
+        });
+    }else {
+        // 5.-llenar resultados con las canciones filtradas
+        cancionesFiltradas.forEach((item) => {
+            resultadoCanciones.innerHTML += `
+                <div class="lista" data-title="${item.tituloCancion}" data-type="cancion">
+                    <img src="${item.fotoCancion}" alt="${item.cancion}" width="150">
+                    <a href="${item.referencia}">${item.tituloCancion}</a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                </div>`;
+        });
+    
+        // 6.-llenar resultados con los albums filtrados
+        albumsFiltrados.forEach((item) => {
+            resultadoAlbums.innerHTML += `
+                <div class="lista" data-title="${item.tituloAlbum}" data-type="album">
+                    <img src="${item.img}" alt="${item.alt}" width="150">
+                    <a href="${item.href}">${item.a}</a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                </div>`;
+        });
+    }
 });

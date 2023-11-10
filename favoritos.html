@@ -73,6 +73,19 @@
             <input type="text" id="filter-keyword">
             <button type="button" id="filter-button">Filtrar</button>
         </form> -->
+        <form id="formularioBusqueda">
+            <label for="tipoBusqueda">Selecciona el tipo de búsqueda:</label>
+            <select id="tipoBusqueda" name="tipoBusqueda" onchange="cambioDeSeleccionador()">
+                <option value="1">Todas</option>
+                <option value="2">Canción</option>
+                <option value="3">Álbum</option>
+            </select>
+    
+            <label for="busqueda">Ingresa el texto de búsqueda:</label>
+            <input type="text" id="busqueda" name="busqueda">
+    
+        
+        </form>
 
         <section class="columnas">
             <h2>Tus Canciones Favoritas</h2>
