@@ -6,16 +6,16 @@ let canciones=[
         referencia:"https://open.spotify.com/track/1V4uMdCH6aDZire0vVqnXW"
     },   
     {
-        tituloCancion:"Prisioner",
-        fotoCancion:"css/imgmati/dua lipa luna.jpg",
-        cancion:"Prisioner(ft dua lipa)",
-        referencia:"https://open.spotify.com/track/1V4uMdCH6aDZire0vVqnXW"
+        tituloCancion:"Ciudad Magica",
+        fotoCancion:"css/imgmati/bionica album.jpg",
+        cancion:"Ciudad Magica",
+        referencia:"https://open.spotify.com/intl-es/track/29Bjl63rfik8188v8J08hQ?si=f7330971706249f7"
     },
     {
-        tituloCancion:"Prisioner",
-        fotoCancion:"css/imgmati/dua lipa luna.jpg",
-        cancion:"Prisioner(ft dua lipa)",
-        referencia:"https://open.spotify.com/track/1V4uMdCH6aDZire0vVqnXW"
+        tituloCancion:"Pendejo",
+        fotoCancion:"css/imgmati/babasonicos album.jpg",
+        cancion:"Pendejo",
+        referencia:"https://open.spotify.com/intl-es/track/60GX3BzwD0n4RlntDDsnxO?si=26d8ce558517417c"
     }
 ];
 
@@ -32,26 +32,26 @@ canciones.forEach((item)=>{
 
 let albums=[
     {
-        tituloAlbum:"Prisioner",
+        tituloAlbum:"Future Nostalgia",
         img:"css/imgmati/dua lipa luna.jpg",
-        alt:"Prisioner(ft dua lipa)",
-        href:"https://open.spotify.com/track/1V4uMdCH6aDZire0vVqnXW",
-        a:"Prisioner"
+        alt:"Future Nostalgia",
+        href:"https://open.spotify.com/album/0JeyP8r2hBxYIoxXv11XiX",
+        a:"Future Nostalgia"
 
     },
     {
-        tituloAlbum:"Prisioner",
-        img:"css/imgmati/dua lipa luna.jpg",
-        alt:"Prisioner(ft dua lipa)",
+        tituloAlbum:"Ciudad Magica",
+        img:"css/imgmati/bionica album.jpg",
+        alt:"Ciudad Magica",
         href:"https://open.spotify.com/track/1V4uMdCH6aDZire0vVqnXW",
-        a:"Prisioner"
+        a:"Ciudad Magica"
     },
     {
-        tituloAlbum:"Prisioner",
-        img:"css/imgmati/dua lipa luna.jpg",
-        alt:"Prisioner(ft dua lipa)",
+        tituloAlbum:"Pendejo",
+        img:"css/imgmati/babasonicos album.jpg",
+        alt:"Pendejo",
         href:"https://open.spotify.com/track/1V4uMdCH6aDZire0vVqnXW",
-        a:"Prisioner"
+        a:"Pendejo"
     }
 ];
 let resultadoAlbums = document.querySelector("#resultadoAlbums");
