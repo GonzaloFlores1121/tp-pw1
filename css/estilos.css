@@ -76,61 +76,6 @@
     font-size: 16px;
     margin-top: 10px;
 }
-
-.barra-play{
-    padding-right: 20%;
-    max-width: 85%;
-}
-
-.barra-play {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    position: fixed;
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    margin-top: 6%;
-}
-.boton {
-    background-color: #ffffff;
-    border: none;
-    padding: 15px 50px;
-    margin: 10px;
-}
-
-.boton i {
-    color: #000000;
-    font-size: 24px; 
-}
-
-.volumen{
-    position: relative;
-    left: 600px;
-}
-
-#cancion-lateral img{
-    max-width: 60px;
-    max-height: 60px;
-    position: absolute;
-    left: 10px;
-    top: 5px;
-}
-
-#cancion-lateral a{
-    text-decoration: none;
-}
-
-#cancion-lateral span{
-  position: absolute;
-  left: 80px;
-  top: 30px;
-  color: rgb(0, 0, 0);
-  font: 1.1em;
-}
-
 @media screen and (max-width: 54.25em){
     .boton i{
         font-size: 1.1em; 
@@ -152,5 +97,5 @@
     }
     
 }
-    
+   
 

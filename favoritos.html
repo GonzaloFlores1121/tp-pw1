@@ -62,17 +62,6 @@
         </section>
         <p id="reproducida">reproducida 500 veces</p>
 
-        <!-- <form id="filter-form">
-            <label for="filter-type">Filtrar por:</label>
-            <select id="filter-type">
-                <option value="all">Todo</option>
-                <option value="album">Álbum</option>
-                <option value="cancion">Cancion</option>
-            </select>
-            <label for="filter-keyword">Palabra clave:</label>
-            <input type="text" id="filter-keyword">
-            <button type="button" id="filter-button">Filtrar</button>
-        </form> -->
         <form id="formularioBusqueda">
             <label for="tipoBusqueda">Selecciona el tipo de búsqueda:</label>
             <select id="tipoBusqueda" name="tipoBusqueda" onchange="cambioDeSeleccionador()">
@@ -100,7 +89,31 @@
                 
             </article>
         </section>
+        
+        <div class="barra-play">
+            
+            <div id="cancion-lateral">
+                <a href="misalbums.html">
+                    <img src="css/imagenes/unnamed.jpg" alt="Portada de Canción 3">
+                    <br>
+                    <span> Cancion1 </span>
+                </a>
 
+            </div>
+            <button id="anterior" class="boton">
+                <i class="fa-solid fa-backward"></i>
+            </button>
+            <button id="play-pausa" class="boton">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="siguiente" class="boton">
+                <i class="fas fa-forward"></i>
+            </button>
+            <div class="volumen">
+                <input type="range" id="volumen-control" min="0" max="100" step="1" value="50">
+               
+            </div>
+        </div>
     </main>
     <footer>
         <section>
